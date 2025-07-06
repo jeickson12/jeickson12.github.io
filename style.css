@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff9fb;
+    color: #333;
+}
+
+header {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff6b98;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #fff0f5, #ffebf3);
+}
+
+.hero h2 span {
+    color: #ff6b98;
+}
+
+.btn {
+    background: #ff6b98;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Tutoriales */
+.tutoriales {
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h4 {
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+}
+
+footer a {
+    color: #ff6b98;
+}
+/* Estilos para el login */
+.login-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.back-button {
+    color: #ff6b98;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.links {
+    margin-top: 1.5rem;
+}
+
+.links a {
+    display: block;
+    color: #ff6b98;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-size: 14px;
+}
+.btn:active {
+    transform: scale(0.98); /* Efecto de presión */
+    background: #e55a8a; /* Color más oscuro al presionar */
+}

